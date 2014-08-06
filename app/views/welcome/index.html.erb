@@ -1,0 +1,5 @@
+<center><h1>目录</h1></center>
+
+<% @articles.each  do | article|%>
+	<%= link_to article.title,   article_path(article) %><br /><br />
+<% end %>

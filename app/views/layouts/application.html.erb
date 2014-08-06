@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "depot", :media => 'all' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class = "main" >
+  	<div  class = "main_1">
+  		<div class="main_1_1">
+  			<div class="main_1_1_1">
+  				<%=  image_tag  "headimg.jpg", class: "main_1_1_1_image" %>
+  			</div>
+  			<div class="main_1_1_1_information">
+  				
+  					<center><h1>辉辉 HOME</h1></center>
+  					<div class="main_1_1_1_information_left">
+  						<p style="float:right">
+  						      职业：<br /><br />
+  						      家乡：<br /><br />
+  						      就读于：<br /><br />
+  						      座右铭：<br /><br />
+  						</p>
+  					</div>
+  					<div class="main_1_1_1_imformation_right">
+  						<p style="float:left">
+  						      学生<br /><br />
+  						      中国.山东<br /><br />
+  						      山东理工大学<br /><br />
+  						      念念不忘，必有回响。<br /><br />
+  						</p>
+  					</div>
+  			</div>
+  		</div>
+  		<div class="main_1_2">
+  			<%= yield %>
+  		</div>
+  		
+  	</div>
+
+  </div>
+
+
+</body>
+</html>

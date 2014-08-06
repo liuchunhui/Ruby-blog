@@ -1,0 +1,16 @@
+<center>
+	<h1><%= @article.title%></h1>
+</center>
+	
+<p>
+	<%= @article.text %>
+</p>
+
+<h4>评论：</h4>
+<%= render @article.comments %>
+
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+
+<%= link_to '返回',welcome_index_path %>
+

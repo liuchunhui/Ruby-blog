@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "depot", :media => 'all' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class = "main" >
+  	<div  class = "main_1">
+  		<div class="main_1_1">
+  			<div class="main_1_1_1">
+  				<%=  image_tag  "headimg.jpg", class: "main_1_1_1_image" %>
+  			</div>
+  			<div class="main_1_1_1_information">
+  				
+  					<h1>辉辉 HOME</h1>
+  					<pre>
+  					职业：学生
+  					籍贯：中国.山东
+  			             就读于：山东理工大学
+  				     座右铭：念念不忘，必有回响。
+  					</pre>
+  				
+  			</div>
+  		</div>
+  		<div class="main_1_2">
+  			<%= yield %>
+  		</div>
+  		
+  	</div>
+
+  </div>
+
+
+</body>
+</html>
